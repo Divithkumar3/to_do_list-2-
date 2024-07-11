@@ -1,50 +1,94 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box1{
-            width: 400px;
-            background-color: rgb(166, 94, 233);
-            color: white;
-            height: 300px;
-            margin-left: 500px;
-            margin-top: 200px;
+        .container{
+            background-color: rgb(67, 228, 67);
+            width: 600px;
+            height: 500px;
+            position: absolute;
+            left: 500px;
+            top: 100px;
         }
-        .box2{
-            width: 200px;
-            background-color: rgb(10, 10, 10);
+        .content{
+            background-color:white;
+            width: 500px;
+            height: 350px;
+            position: relative;
+            left: 50px;
+            top: 60px;
+            border-radius: 15px;
+        }
+        p{
+            position: relative;
+            left: 30px;
+        }
+        h1{
+            position: relative;
+            left: 30px;
+        }
+        input{
+            position: relative;
+            left: 30px;
+        }
+        .btn1{
+            position: relative;
+            left: 60px;
+            border-radius: 5px;
+            font-size: 15px;
+            background-color: rgb(85, 85, 244);
+            cursor: pointer;
             color: white;
-            height: 150px;
+        }
+        .div1{
+            position: relative;
+            top: 20px;
+            left: 60px;
+        }
+        .btn4,.btn2,.btn3{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            border-radius: 10px;
+            color: wheat;
+            font-size: 15px;
+        }
+        .btn2{
+            background-color: blue;
+        }
+        .btn3{
+            background-color: brown;
             position: relative;
             left: 70px;
-            top: 40px;
-            padding: 30px;
         }
-        span{
-            background-color: rgb(83, 82, 82);
+        .btn4{
+            background-color: green;
             position: relative;
-            bottom: 35px;
-            right: 20px;
+            left: 90px;
         }
-        s{
-            color: rgb(115, 115, 115);
+        .para{
+            position: relative;
+            top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="box1">
-        
-        <div class="box2">
-            <span>Todo-list</span>
-            <div class="content"><input type="checkbox">&nbsp;&nbsp;&nbsp;Attend Meeting</div><br>
-            <div class="content">&#10004&nbsp;&nbsp;&nbsp;<s>Complete Assignment</s></div><br>
-            <div class="content">&#10004 &nbsp;&nbsp;&nbsp;<s>Finish design for new</s></div><br>
-            <div class="content"><input type="checkbox">&nbsp;&nbsp;&nbsp;Go to gym</div>
+    <div class="container">
+        <div class="content">
+            <div class="para"><h1>My to-do-list</h1>
+            <p>Double click an item to mark it complete</p>
+            <input type="text"><button class="btn1">Add</button>
+            <div class="div1">1.My</div><br>
+            <div class="div1"><s>2.to-do</s></div><br>
+            <div class="div1">3.list</div>
+            <button class="btn2">Clear Completed</button>
+            <button class="btn3">Empty List</button>
+            <button class="btn4">Save List</button></div>
+        </div>
         </div>
     </div>
 </body>
 </html>
-  
